@@ -35,13 +35,19 @@ const testimonials: Testimonial[] = [
 
 const faqData: FAQItem[] = [
     {
-        question: "What exactly does this platform do?",
-        answer: "Our platform lets you design, deploy, and manage AI-powered agents, workflows that can combine both automated AI and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks."
+        question: "What is Storesolly?",
+        answer: "Storesolly is a Solana-powered retail checkout platform for physical stores."
     },
-    { question: "Do I need to be technical to use this tool?", answer: "No, our interface is designed for both developers and non-technical builders." },
-    { question: "What's a typical use case of an Anagento workflow?", answer: "Automating customer support triaging or lead generation pipelines." },
-    { question: "Can I connect this with my existing stack?", answer: "Yes, we support 100+ integrations via API and native connectors." },
-    { question: "How does AI model selection work?", answer: "You can toggle between different LLMs depending on your cost and latency needs." }
+    {
+        question: "Who is it for?",
+        answer: "Supermarkets, mini-marts, pharmacies, restaurants, and other cashier-assisted retail businesses."
+    },
+    { question: "Why Solana?", answer: "Solana offers fast, low-cost transactions, making it ideal for retail payments." },
+    { question: "How do I accept payments?", answer: "Link your Solana wallet to the POS terminal and start accepting payments instantly." },
+    { question: "Is it secure?", answer: "Yes, all transactions are processed on the Solana blockchain, ensuring security and transparency." },
+    { question: "Do I need technical knowledge?", answer: "No, our POS system is designed to be user-friendly for non-technical store owners." },
+    { question: "Can I switch between USD and crypto?", answer: "Yes, the platform supports both USD and crypto payments, with easy conversion." },
+    { question: "How does this help my business?", answer: "Reduce transaction fees, attract crypto-savvy customers, and streamline your checkout process." }
 ];
 
 export default function FaqUI() {
@@ -97,12 +103,12 @@ export default function FaqUI() {
 
                     <div className="bg-white p-8 rounded-xl border border-gray-200  inline-block max-w-sm">
                         <h4 className="text-xl font-medium mb-4 leading-snug">
-                            Need a fast moving team of engineers for your startup?
+                            Ready to modernize your store checkout?
                         </h4>
                         <p className="text-gray-500 text-sm mb-6">
-                            Acelento is your best bet, we have designers, engineers and managers to take your project from 0-1.
+                            Join the Storesolly pilot and test Solana-powered retail payments in a real store environment.
                         </p>
-                        <ChatButton title={"Contact Us"} size="md" className="mt-4" />
+                        <ChatButton title={"Request Access"} size="md" className="mt-4" />
 
                     </div>
                 </div>

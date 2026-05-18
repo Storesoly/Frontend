@@ -117,8 +117,9 @@ export default function HeroSection() {
                         className="flex flex-col gap-6 lg:pt-[150px] lg:ml-auto max-w-[600px]"
                     >
                         <p className="text-[rgba(255,255,255,0.58)] text-sm leading-[1.7] tracking-[-0.01em]">
-                            First native solution for Solana decentralized ecommerce for physical shops <br />
-                            <span className='text-white'>Next-Gen Payments for Modern Retail.</span>
+                            Accept SOL and USDC in-store with fast QR payments, real-time order verification, and inventory sync.
+                            <br />
+                            <span className='text-white'></span>
                         </p>
                         <div>
                             <ChatButton size="md" title="Get Started" />
