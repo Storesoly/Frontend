@@ -19,7 +19,7 @@ export default function Home() {
       <FeaturesSection />
 
 
-      <PricingSection />
+
       <WhyStoreSollySection />
       <FaqUI />
       <FooterUI />

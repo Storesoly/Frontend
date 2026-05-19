@@ -31,7 +31,7 @@ export default function AnnouncementBadge() {
                 </span>
 
                 {/* Supporting Text */}
-                <span className="text-sm text-zinc-300 font-medium">
+                <span className="text-sm text-zinc-300 font-medium truncate max-w-xs sm:max-w-2xl">
                     Solana-powered retail checkout infrastructure platform for Physical Stores
                 </span>
 

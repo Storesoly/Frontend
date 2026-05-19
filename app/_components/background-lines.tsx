@@ -23,44 +23,33 @@ export default function AdvancedBackgroundLines() {
     ];
 
     return (
-        <div className="absolute inset-0 z-0 h-full w-full pointer-events-none overflow-hidden bg-transparent">
-            <svg
-                className="h-full w-full"
-                viewBox="0 0 1440 900"
-                preserveAspectRatio="xMidYMid slice"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <defs>
-                    <radialGradient id="diamond-mask-grad" cx="50%" cy="28%" r="70%">
-                        <stop offset="0%" stopColor="white" stopOpacity="1" />
-                        <stop offset="70%" stopColor="white" stopOpacity="0.6" />
-                        <stop offset="100%" stopColor="white" stopOpacity="0" />
-                    </radialGradient>
-                    <mask id="diamond-mask">
-                        <rect width="1440" height="900" fill="url(#diamond-mask-grad)" />
-                    </mask>
-                </defs>
-
-                <g mask="url(#diamond-mask)">
-                    {lines.map((line, i) => (
-                        <motion.line
-                            key={i}
-                            x1={line.x1} y1={line.y1}
-                            x2={line.x2} y2={line.y2}
-                            stroke="white"
-                            strokeWidth="0.6"
-                            strokeOpacity="0.22"
-                            initial={{ pathLength: 0, opacity: 0 }}
-                            animate={{ pathLength: 1, opacity: 1 }}
-                            transition={{
-                                pathLength: { duration: 1.8, delay: i * 0.12, ease: "easeInOut" },
-                                opacity: { duration: 0.5, delay: i * 0.12 },
-                            }}
-                        />
-                    ))}
-                </g>
-            </svg>
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {[...Array(6)].map((_, i) => (
+                <motion.div
+                    key={i}
+                    className="absolute h-px w-full"
+                    style={{
+                        top: `${15 + i * 14}%`,
+                        background: `linear-gradient(90deg, transparent 0%, rgba(255,255,255,${0.018 + i * 0.004}) 30%, rgba(255,255,255,${0.025 + i * 0.004}) 50%, rgba(255,255,255,${0.018 + i * 0.004}) 70%, transparent 100%)`,
+                    }}
+                    initial={{ scaleX: 0, opacity: 0 }}
+                    animate={{ scaleX: 1, opacity: 1 }}
+                    transition={{ duration: 1.4, delay: 0.1 + i * 0.08, ease: [0.25, 0.1, 0.25, 1] }}
+                />
+            ))}
+            {[...Array(4)].map((_, i) => (
+                <motion.div
+                    key={`v${i}`}
+                    className="absolute w-px h-full"
+                    style={{
+                        left: `${20 + i * 20}%`,
+                        background: `linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.022) 30%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0.022) 70%, transparent 100%)`,
+                    }}
+                    initial={{ scaleY: 0, opacity: 0 }}
+                    animate={{ scaleY: 1, opacity: 1 }}
+                    transition={{ duration: 1.4, delay: 0.2 + i * 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+                />
+            ))}
         </div>
     );
 }

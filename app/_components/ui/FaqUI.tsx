@@ -22,14 +22,17 @@ const testimonials: Testimonial[] = [
     {
         company: "Cal.com",
         quote: "Working with Manu and his team was a masterclass in design engineering. They didn't just create a website; they built a high-performance, thoughtfully engineered product.",
-        author: "Jack Hudson",
-        role: "VP of Engineering, Cal.com"
-    },
+        author: "Sanjay",
+        role: "CEO, Storesolly"
+    }
+];
+
+const testimonial: Testimonial[] = [
     {
-        company: "ramp",
+        company: "Cal.com",
         quote: "Working with Manu and his team was a masterclass in design engineering. They didn't just create a website; they built a high-performance, thoughtfully engineered product.",
         author: "Jack Hudson",
-        role: "VP of Technology, Cal.com"
+        role: "VP of Engineering, Cal.com"
     }
 ];
 
@@ -54,7 +57,7 @@ export default function FaqUI() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <div className="min-h-screen  text-[#1A1A1A] font-sans selection:bg-yellow-200">
+        <div className="min-h-screen overflow-hidden  text-[#1A1A1A] font-sans selection:bg-yellow-200">
 
             {/* --- Testimonials Section --- */}
             <section className="max-w-7xl mx-auto px-6 py-20">
@@ -67,8 +70,21 @@ export default function FaqUI() {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                    {testimonials.map((t, i) => (
-                        <div key={i} className="bg-gradient-to-tl from-black via-black to-black/70 text-white p-10 rounded-tl-3xl rounded-br-3xl flex flex-col justify-between min-h-[320px]">
+                    {testimonial.map((t, i) => (
+                        <div key={i} className="bg-gradient-to-tl from-black via-black to-black/70 text-white p-10 rounded-tl-3xl rounded-br-3xl flex flex-col justify-between min-h-[320px] ">
+                            <div>
+                                <h3 className="text-2xl font-bold mb-8 italic">{t.company}</h3>
+                                <p className="text-lg leading-relaxed text-gray-300 font-light">
+                                    "{t.quote}"
+                                </p>
+                            </div>
+                            <div className="mt-8">
+                                <p className="font-medium">{t.author}</p>
+                                <p className="text-sm text-gray-500">{t.role}</p>
+                            </div>
+                        </div>
+                    ))}   {testimonials.map((t, i) => (
+                        <div key={i} className="bg-gradient-to-tl from-black via-black to-black/70 text-white p-10 rounded-tl-3xl rounded-br-3xl flex flex-col justify-between min-h-[320px] w-screen overflow-hidden">
                             <div>
                                 <h3 className="text-2xl font-bold mb-8 italic">{t.company}</h3>
                                 <p className="text-lg leading-relaxed text-gray-300 font-light">
@@ -81,6 +97,9 @@ export default function FaqUI() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="grid md:grid-cols-1 gap-6">
+
                 </div>
 
                 {/* Carousel Indicators */}

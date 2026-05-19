@@ -77,7 +77,9 @@ export default function Navbar() {
             </ul>
 
             {/* CTA */}
-            <ChatButton size="sm" title="Get Started" />
+            <Link href="/signup">
+                <ChatButton size="sm" title="Get Started" />
+            </Link>
         </motion.nav>
     );
 }

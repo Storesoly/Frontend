@@ -8,7 +8,7 @@ export default function FooterUI() {
             <div className="max-w-[1500px] mx-auto px-6 py-20">
 
                 {/* --- HERO / CTA SECTION --- */}
-                <div className="relative w-full h-[400px] md:h-[500px] rounded-t-3xl  border border-black/70 bg-gradient-to-tl from-black via-black to-black/70  overflow-hidden flex flex-col justify-center px-8 md:px-16 mb-20">
+                <div className="relative w-full h-[400px] md:h-[500px] rounded-l-3xl  border border-black/70 bg-gradient-to-tl from-black via-black to-black/70  overflow-hidden flex flex-col justify-center px-8 md:px-16 mb-20">
 
                     {/* Faded Background Text */}
                     <h2 className="absolute bottom-[-8%] left-4 text-[8rem] md:text-[16rem] font-bold text-white/[0.05] select-none pointer-events-none">
