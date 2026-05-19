@@ -208,9 +208,9 @@ export default function SignUpPage() {
     };
 
     return (
-        <main className="min-h-screen flex items-center justify-center ">
+        <main className="min-h-screen flex items-center justify-center bg-gradient-to-tl from-black via-black to-black/90 ">
             <section
-                className="relative w-full  min-h-[600px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-tl from-black via-black to-black/90 m-2"
+                className="relative w-full  min-h-[600px] flex flex-col  overflow-hidden  m-2"
                 style={{ borderRadius: "15px 15px 15px 15px" }}
             >
                 <BackgroundLines />
