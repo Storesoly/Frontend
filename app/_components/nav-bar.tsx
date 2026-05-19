@@ -46,7 +46,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-500 ease-in-out ${isFloating
-                ? "bg-gradient-to-tl from-black via-black to-black/90 m-4 md:m-10 rounded-md px-8 py-2 border border-white/10 shadow backdrop-blur-md"
+                ? "bg-gradient-to-tl from-black via-black to-black/90 m-4 md:m-10 rounded-3xl px-8 py-2 border border-white/10 shadow backdrop-blur-md"
                 : "px-8 py-5 bg-transparent m-0 rounded-none border border-transparent"
                 }`}
             style={{ fontFamily: "var(--font-geist)" }}
