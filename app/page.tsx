@@ -15,13 +15,13 @@ export default function Home() {
     <div className="flex flex-col w-full h-full bg-[#EDE8DF]">
       <Navbar />
       <HeroSection />
-      <ProductUI />
+
       <FeaturesSection />
 
 
 
       <WhyStoreSollySection />
-      <FaqUI />
+
       <FooterUI />
     </div>
   );

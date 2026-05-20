@@ -56,18 +56,7 @@ export default function FooterUI() {
 
                     {/* Link Columns */}
                     <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
-                        <FooterColumn
-                            title="Heading one"
-                            links={['Link one', 'Link two', 'Link three', 'Link four', 'Link five']}
-                        />
-                        <FooterColumn
-                            title="Heading two"
-                            links={['Link one', 'Link two', 'Link three', 'Link four', 'Link five']}
-                        />
-                        <FooterColumn
-                            title="Heading three"
-                            links={['Link one', 'Link two', 'Link three', 'Link four', 'Link five']}
-                        />
+
                         <FooterColumn
                             title="Legal"
                             links={['Privacy Policy', 'Terms of Service', 'Status']}
@@ -77,7 +66,7 @@ export default function FooterUI() {
 
                 {/* --- BOTTOM BAR --- */}
                 <div className="pt-10 border-t border-white/5 flex flex-col md:row flex-row justify-between items-center gap-4 text-xs text-neutral-500">
-                    <p>© 2024Storesolly Labs - All Rights Reserved</p>
+                    <p>© 2026 Storesolly - All Rights Reserved</p>
                     <div className="flex gap-6 items-center">
 
                     </div>

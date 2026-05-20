@@ -8,7 +8,7 @@ import StoresollyLogo from "./store-solly-icon";
 import Image from "next/image";
 import Link from "next/link";
 
-const navLinks = ["Works", "Products", "Pricing", "Blogs"];
+const navLinks = ["Home", "Why Storesolly?",];
 
 export default function Navbar() {
     const [isFloating, setIsFloating] = useState(false);

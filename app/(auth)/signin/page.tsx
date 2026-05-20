@@ -266,7 +266,7 @@ export default function SignInPage() {
 
                 {/* Watermark */}
                 <div
-                    className="absolute bottom-0 left-0 right-0 pointer-events-none overflow-hidden select-none"
+                    className="absolute bottom-0  right-0 pointer-events-none overflow-hidden select-none"
                     style={{
                         maskImage:
                             "linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.12) 55%, transparent 100%)",
